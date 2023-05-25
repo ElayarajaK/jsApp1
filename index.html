@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="s_id" placeholder="Enter the id" />
+        <br /><br />
+        <input type="text" id="s_name" placeholder="Enter the id" />
+        <br /><br />
+        <input type="text" id="s_address" placeholder="Enter the id" />
+        <br /><br />
+        <input type="text" id="s_marks" placeholder="Enter the id" />
+        <br /><br />
+
+        <input type="submit" onclick="getData()" />
+    </form>
+
+
+
+
+    <h1 id="print"></h1>
+
+    <script>
+        var id, name, address, marks;
+        let valuse;
+
+        function getData() {
+            id = document.getElementById("s_id").value;
+            name = document.getElementById("s_name").value;
+            address = document.getElementById("s_address").value;
+            marks = document.getElementById("s_marks").value;
+
+            Student4 = new Student(id, name, address, marks);
+
+
+            document.getElementById("print").innerText = Student4.printData();
+
+
+
+        }
+
+
+
+
+
+        console.log(name)
+
+        // document.getElementById("print").innerText=Student4.printData();
+
+
+        class Student {
+
+            constructor(id, name, address, marks) {
+
+                this.id = id;
+                this.name = name;
+                this.address = address;
+                this.marks = marks;
+            }
+
+            printData() {
+                return "Student id = " + this.id + "Student name = " + this.name + "Student address = " + this.address + "Marks = " + this.marks;
+            }
+
+
+        }
+
+        function add(a, b) {
+            console.log("Function is loading...");
+
+
+        }
+
+        //  add(100,200);
+        // add(100,200);
+
+        /* Student1=  new Student(2011,"rajesh","chennai");
+  
+         Student2=  new Student(20133,"aadhi","Madurai",100);
+          
+         document.writeln("<h1>"+Student1.printData()+"</h1>");
+         document.writeln("<h1>"+Student2.printData()+"</h1>");
+          */
+
+
+        console.log(valuse);
+    </script>
+
+</body>
+
+</html>

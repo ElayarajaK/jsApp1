@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script type="module">
+        import {name} from "./App/A.js";
+
+        import {Student} from "./App1/User.js";
+
+      //  import {name} from "./App1/User.js";
+
+      alert(name);
+
+     let std1 = new Student("raja","Banglore",100);
+
+      console.log(std1.getData());
+    </script>
+
+<script type="module" src="./App/A.js"></script>
+   
+</body>
+</html>
